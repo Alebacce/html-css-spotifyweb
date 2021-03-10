@@ -14,8 +14,8 @@
 <body>
     <div id="app-wrapper">
     <!--MAIN-->
-    <main>
-        <div class="sidebar-container float-height">
+    <main class="clearfix">
+        <div class="sidebar-container float">
             <div class="logo">
                 <img src="img/logo.svg" alt="Spotify logo">
             </div>
@@ -25,27 +25,36 @@
                         <div class="sidebar-image-box">
                             <img src="img/home.svg" alt="Home">
                         </div>
-                        <span class="selected">Home</span>
+                        <a href="#"><span class="selected">Home</span></a>
                     </li>
 
                     <li>
                         <div class="sidebar-image-box">
                             <img src="img/search.svg" alt="Search">
                         </div>
-                        Cerca
+                        <a href="#">Cerca</a>
                     </li>
 
                     <li>
                         <div class="sidebar-image-box">
                             <img src="img/libreria.svg" alt="La tua libreria">
                         </div>
-                        La tua Libreria
+                        <a href="#">La tua Libreria</a>
                     </li>
                 </ul>
             </div>
+
+            <div class="playlist-container">
+                <a id="create-playlist-container" class="clearfix" href="#">
+                        <div id="plus-btn" class="float">
+                            <span id="plus">+</span>
+                        </div>
+                        <span id="create-playlist-text" class="float">Crea Playlist</span>
+                </a>
+            </div>
         </div>
 
-        <div class="main-content float-height">
+        <div class="main-content float">
             main content
         </div>
     </main>
