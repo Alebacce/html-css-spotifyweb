@@ -40,10 +40,6 @@ h6 {
     color: white;
 }
 
-.selected {
-    color: white;
-}
-
 .i-b {
     display: inline-block;
 }
@@ -68,7 +64,6 @@ main {
     height: 100%;
     overflow: hidden;
     padding-top: 20px;
-    padding-left: 20px;
     padding-right: 20px;
 
     color: #6b6b6b;
@@ -79,17 +74,36 @@ main {
     justify-content: space-between;
 }
 
+/*Mi serve per fare il bordicino verde vicino a home*/
+.sidebar-container .logo,
+.sidebar-container .playlist-container,
+.sidebar-container .download,
+.sidebar-container .user {
+    padding-left: 20px;
+}
+
 .sidebar-container a {
     color: #6b6b6b;
     text-decoration: none;
 }
 
+.sidebar-container a:hover {
+    color: white;
+}
+
 .logo {
-    width: 70%;
+    width: 75%;
     margin-bottom: 30px;
 }
 
 /*app-sections*/
+/*Qui do il padding agli <a> e non alla sezione in sè in modo da
+poter fare il bordicino verde su home */
+.app-sections a {
+    padding-left: 20px;
+    display: block;
+}
+
 .app-sections li {
     margin-bottom: 8px;
 }
@@ -101,6 +115,20 @@ main {
 .sidebar-image-box {
     width: 23px;
     display: inline-block;
+}
+
+.selected {
+    color: white;
+}
+
+.highlight {
+    border-left: 3px solid #adff2f;
+}
+
+/*con 14px anziché 20 si allinea perfettamente con le immagini sotto,
+in pratica è 20px - 3px di border-left della classe highlight*/
+.app-sections a.highlight {
+    padding-left: 17px;
 }
 
 /*playlist*/
@@ -132,6 +160,10 @@ main {
     margin-bottom: 15px;
 }
 
+#create-playlist-container a:hover {
+    background-color: white;
+}
+
 #plus-btn {
     width: 35px;
     height: 35px;
@@ -140,11 +172,19 @@ main {
     text-align: center;
 }
 
+#plus-btn:hover {
+    background-color: white;
+}
+
 #plus {
     font-size: 40px;
     font-weight: 500;
     color: black;
     line-height: 35px;
+}
+
+#create-playlist-text {
+    font-size: 16px;
 }
 
 /*download app*/
@@ -183,13 +223,21 @@ main {
     border-radius: 50%;
 }
 
+.user span {
+    color: white;
+    font-size: 14px;
+}
+
 /*MAIN CONTENT*/
 .main-content {
     width: calc(100% - 220px);
     height: 100%;
     overflow: auto;
+    padding-top: 105px;
 
     background-color: #141922;
+    /*TEST*/
+    color: white;
 }
 
 /*FOOTER*/
@@ -200,4 +248,39 @@ footer {
     overflow: hidden;
 
     background-color: #282828;
+    /*TEST*/
+    color: white;
+}
+
+/*FIXED TOP BUTTON*/
+#fixed-btn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 220px);
+    text-align: right;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    height: 87.17px;
+    padding-right: 5px;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+#fixed-btn a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border: 1px solid wheat;
+    border-radius: 50px;
+
+    display: block;
+}
+
+#fixed-btn a:hover {
+    font-size: 14px;
 }
