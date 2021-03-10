@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif
+}
+
+ul {
+    list-style-type: none;
+}
+
 /*COMMON*/
 #app-wrapper {
     height: 100vh;
@@ -16,18 +24,37 @@
     height: 100%;
 }
 
+.selected {
+    color: white;
+}
+
 /*MAIN*/
 main {
     height: calc(100% - 100px);
 }
 
+/*sidebar*/
 .sidebar-container {
     width: 220px;
     overflow: hidden;
+    padding-top: 20px;
+    padding-left: 20px;
+
+    color: #6b6b6b;
     /*TEST*/
-    background-color: cadetblue;
+    background-color: black;
 }
 
+.logo {
+    width: 80%;
+}
+
+.sidebar-image-box {
+    width: 20px;
+    display: inline-block;
+}
+
+/*main content*/
 .main-content {
     width: calc(100% - 220px);
     overflow: auto;
