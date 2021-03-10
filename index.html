@@ -15,41 +15,53 @@
     <div id="app-wrapper">
     <!--MAIN-->
     <main class="clearfix">
+
+        <!--Sidebar-->
         <div class="sidebar-container float">
             <div class="logo">
                 <img src="img/logo.svg" alt="Spotify logo">
             </div>
+
+            <!--app sections-->
             <div class="app-sections">
                 <ul>
                     <li>
-                        <div class="sidebar-image-box">
-                            <img src="img/home.svg" alt="Home">
-                        </div>
-                        <a href="#"><span class="selected">Home</span></a>
+                        <a href="#">
+                            <div class="sidebar-image-box i-b va-m">
+                                    <img src="img/home.svg" alt=" Home">
+                            </div>
+                            <span class="i-b va-m selected">Home</span>
+                        </a>
                     </li>
 
                     <li>
-                        <div class="sidebar-image-box">
-                            <img src="img/search.svg" alt="Search">
-                        </div>
-                        <a href="#">Cerca</a>
+                        <a href="#">
+                            <div class="sidebar-image-box i-b va-m">
+                                    <img src="img/search.svg" alt="Cerca">
+                            </div>
+                            <span class="i-b va-m">Cerca</span>
+                        </a>
                     </li>
 
                     <li>
-                        <div class="sidebar-image-box">
-                            <img src="img/libreria.svg" alt="La tua libreria">
-                        </div>
-                        <a href="#">La tua Libreria</a>
+                        <a href="#">
+                            <div class="sidebar-image-box i-b va-m">
+                                    <img src="img/libreria.svg" alt=" La tua libreria">
+                            </div>
+                            <span class="i-b va-m">La tua libreria</span>
+                        </a>
                     </li>
                 </ul>
             </div>
 
+            <!--playlist-->
             <div class="playlist-container">
+                <h2>Playlist</h2>
                 <a id="create-playlist-container" href="#">
                         <div id="plus-btn" class="i-b va-m" >
                             <span id="plus">+</span>
                         </div>
-                        <span id="create-playlist-text" class="i-b mg-lf-10">Crea Playlist</span>
+                        <span id="create-playlist-text" class="i-b mg-lf-7">Crea Playlist</span>
                 </a>
                 
                 <ul>
@@ -94,35 +106,29 @@
                             Nome Playlist
                         </a>
                     </li>
-
-                    <li>
-                        <a href="#">
-                            Nome Playlist
-                        </a>
-                    </li>
                 </ul>
             </div>
 
-            <div class="user-and-app-download">
+            <!--download app-->
                 <div class="download">
                     <a href="#">
                         <div class="download-link-img-box i-b va-m">
                             <img src="img/download.svg" alt="Download the app">
                         </div>
-                        <span class="i-b mg-lf-10">Installa app</span>
+                        <span class="i-b mg-lf-7">Installa app</span>
                     </a>
                 </div>
                 
+                <!--user-->
                 <div class="user">
                     <a href="#">
                         <div class="user-img-box i-b va-m">
-                                <img src="img/profile.svg" alt="Download the app">
+                                <img src="img/profile.svg" alt="User profile">
                         </div>
-                        <span class="i-b va-m mg-lf-10">John Doe</span>
+                        <span class="i-b va-m mg-lf-7">John Doe</span>
                     </a>
                 </div>
             </div>
-        </div>
 
         <div class="main-content float">
             main content

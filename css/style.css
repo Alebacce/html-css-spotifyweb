@@ -6,7 +6,9 @@
 }
 
 body {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .clearfix::after {
@@ -29,6 +31,15 @@ ul {
     float: left;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+}
+
 .selected {
     color: white;
 }
@@ -41,8 +52,8 @@ ul {
     vertical-align: middle;
 }
 
-.mg-lf-10 {
-    margin-left: 10px;
+.mg-lf-7 {
+    margin-left: 7px;
 }
 
 /*MAIN*/
@@ -50,7 +61,8 @@ main {
     height: calc(100% - 100px);
 }
 
-/*sidebar*/
+
+/*SIDEBAR*/
 .sidebar-container {
     width: 220px;
     height: 100%;
@@ -73,17 +85,37 @@ main {
 }
 
 .logo {
-    width: 80%;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+/*app-sections*/
+.app-sections li {
+    margin-bottom: 8px;
+}
+
+.app-sections span {
+    margin-left: 5px;
 }
 
 .sidebar-image-box {
-    width: 20px;
+    width: 23px;
     display: inline-block;
 }
 
+/*playlist*/
 .playlist-container {
     flex-grow: 1;
     min-height: 100px;
+    overflow: hidden;
+
+    margin-top: 15px;
+}
+
+.playlist-container h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 13px;
 }
 
 .playlist-container ul {
@@ -91,13 +123,18 @@ main {
     overflow: auto;
 }
 
+.playlist-container li {
+    margin-bottom: 15px;
+}
+
 #create-playlist-container {
     display: block;
+    margin-bottom: 15px;
 }
 
 #plus-btn {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     background-color: #a3a3a3;
 
     text-align: center;
@@ -105,10 +142,12 @@ main {
 
 #plus {
     font-size: 40px;
+    font-weight: 500;
     color: black;
-    line-height: 30px;
+    line-height: 35px;
 }
 
+/*download app*/
 .download {
     padding-bottom: 7px;
     border-bottom: 1px solid #a3a3a3;
@@ -122,6 +161,7 @@ main {
     width: 15px;
 }
 
+/*user profile*/
 .user {
     padding-top: 7px;
     padding-bottom: 5px;
@@ -132,8 +172,8 @@ main {
 }
 
 .user-img-box {
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
 }
 
 .user-img-box img {
@@ -143,13 +183,13 @@ main {
     border-radius: 50%;
 }
 
-/*main content*/
+/*MAIN CONTENT*/
 .main-content {
     width: calc(100% - 220px);
     height: 100%;
     overflow: auto;
-    /*TEST*/
-    background-color: rosybrown;
+
+    background-color: #141922;
 }
 
 /*FOOTER*/
@@ -158,6 +198,6 @@ footer {
     height: 100px;
     width: 100%;
     overflow: hidden;
-    /*TEST*/
-    background-color: darkkhaki;
+
+    background-color: #282828;
 }
