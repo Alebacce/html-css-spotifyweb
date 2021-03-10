@@ -6,3 +6,41 @@
 }
 
 /*COMMON*/
+#app-wrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+.float-height {
+    float: left;
+    height: 100%;
+}
+
+/*MAIN*/
+main {
+    height: calc(100% - 100px);
+}
+
+.sidebar-container {
+    width: 220px;
+    overflow: hidden;
+    /*TEST*/
+    background-color: cadetblue;
+}
+
+.main-content {
+    width: calc(100% - 220px);
+    overflow: auto;
+    /*TEST*/
+    background-color: rosybrown;
+}
+
+/*FOOTER*/
+footer {
+    clear: both;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    /*TEST*/
+    background-color: darkkhaki;
+}
