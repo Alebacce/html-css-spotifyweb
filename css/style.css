@@ -329,8 +329,11 @@ in pratica è 20px - 3px di border-left della classe highlight*/
 .main-content {
     width: calc(100% - 220px);
     height: 100%;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding-top: 105px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     background-color: #141922;
     /*TEST*/
@@ -370,6 +373,71 @@ in pratica è 20px - 3px di border-left della classe highlight*/
     margin-left: auto;
     margin-right: auto;
     margin-top: 3px;
+}
+
+.main-section h2 {
+    font-size: 22px;
+}
+
+.title {
+    padding-bottom: 30px;
+}
+
+.title-with-subtitle {
+    padding-bottom: 10px;
+}
+
+.main-section-subtitle {
+    padding-bottom: 30px;
+    color: #8d8d8d;
+}
+
+.main-album-container {
+    width: 100%;
+    display: flex;
+    flex-direction: ;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.main-album-item {
+    width: calc(100% / 6);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 30px;
+}
+
+@media all and (max-width: 992px) {
+    .main-album-item {
+        width: calc(100% / 4);
+    }
+}
+
+@media all and (max-width: 768px) {
+    .main-album-item {
+        width: calc(100% / 2);
+    }
+}
+
+.main-album-cover {
+    width: 100%
+}
+
+.main-album-cover img {
+    width: 100%;
+}
+
+.main-album-info {
+    text-align: center;
+}
+
+.main-album-info span {
+    font-size: 11px;
+    color: #8d8d8d;
+}
+
+.round-img img {
+    border-radius: 50%;
 }
 
 /*FOOTER*/
@@ -469,7 +537,7 @@ footer {
 
 /*footer-right*/
 .footer-section-right {
-    width: 20%;
+    width: 15%;
     min-width: 150px;
     display: flex;
     flex-direction: row;
@@ -495,7 +563,7 @@ footer {
     align-items: center;
 
     height: 87.17px;
-    padding-right: 5px;
+    padding-right: 25px;
     background-color: rgba(0, 0, 0, 0.4)
 }
 
