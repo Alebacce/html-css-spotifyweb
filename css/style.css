@@ -54,6 +54,17 @@ h6 {
     margin-left: 7px;
 }
 
+.interactive-bar {
+    width: 50%;
+    /* content: "";
+    display: block;
+    background-color: white; */
+    width: 50%;
+    padding: 2px;
+    background-color: white;
+    border-radius: 5px;
+}
+
 /*MAIN*/
 main {
     height: calc(100% - 100px);
@@ -352,7 +363,9 @@ footer {
     align-items: center;
 }
 
+/*footer-left*/
 .footer-section-left {
+    width: 20%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -360,7 +373,7 @@ footer {
 }
 
 .footer-album-container {
-    width: 10%;
+    width: 15%;
 }
 
 .footer-album-info {
@@ -376,8 +389,18 @@ footer {
     padding-right: 10px;
 }
 
+/*footer-center*/
 .footer-section-center {
     flex-grow: 1;
+}
+
+/*footer-right*/
+.footer-section-right {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*FIXED TOP BUTTON*/
