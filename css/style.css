@@ -74,12 +74,23 @@ main {
     justify-content: space-between;
 }
 
+@media all and (max-width: 767px) {
+    .sidebar-container {
+        width: fit-content;
+        padding-top: 20px;
+        padding-right: 10px;
+    }
+}
+
 /*Mi serve per fare il bordicino verde vicino a home*/
-.sidebar-container .logo,
-.sidebar-container .playlist-container,
-.sidebar-container .download,
-.sidebar-container .user {
+.sidebar-padding {
     padding-left: 20px;
+}
+
+@media all and (max-width: 767px) {
+    .sidebar-padding {
+        padding-left: 10px;
+    }
 }
 
 .sidebar-container a {
@@ -91,9 +102,25 @@ main {
     color: white;
 }
 
-.logo {
+.logo-big {
     width: 75%;
     margin-bottom: 30px;
+}
+
+.logo-small {
+    display: none;
+}
+
+@media all and (max-width: 767px) {
+    .logo-big {
+        display: none;
+    }
+
+    .logo-small {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
 
 /*app-sections*/
@@ -104,12 +131,30 @@ poter fare il bordicino verde su home */
     display: block;
 }
 
+@media all and (max-width: 767px) {
+    .app-sections {
+        flex-grow: 1;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .app-sections a {
+        padding-left: 10px;
+    }
+}
+
 .app-sections li {
     margin-bottom: 8px;
 }
 
 .app-sections span {
     margin-left: 5px;
+}
+
+@media all and (max-width: 767px) {
+    .app-sections span {
+        display: none;
+    }
 }
 
 .sidebar-image-box {
@@ -125,10 +170,22 @@ poter fare il bordicino verde su home */
     border-left: 3px solid #adff2f;
 }
 
+@media all and (max-width: 767px) {
+    .highlight {
+        border-left: 0;
+    }
+}
+
 /*con 14px anziché 20 si allinea perfettamente con le immagini sotto,
 in pratica è 20px - 3px di border-left della classe highlight*/
 .app-sections a.highlight {
     padding-left: 17px;
+}
+
+@media all and (max-width: 767px) {
+    .app-sections a.highlight {
+        padding-left: 10px;
+    }
 }
 
 /*playlist*/
@@ -138,6 +195,12 @@ in pratica è 20px - 3px di border-left della classe highlight*/
     overflow: hidden;
 
     margin-top: 15px;
+}
+
+@media all and (max-width: 767px) {
+    .playlist-container {
+        display: none;
+    }
 }
 
 .playlist-container h2 {
@@ -201,6 +264,17 @@ in pratica è 20px - 3px di border-left della classe highlight*/
     width: 15px;
 }
 
+@media all and (max-width: 767px) {
+    .download {
+        padding-bottom: 7px;
+        border-bottom: 0
+    }
+
+    .download span {
+        display: none;
+    }
+}
+
 /*user profile*/
 .user {
     padding-top: 7px;
@@ -226,6 +300,12 @@ in pratica è 20px - 3px di border-left della classe highlight*/
 .user span {
     color: white;
     font-size: 14px;
+}
+
+@media all and (max-width: 767px) {
+    .user span {
+        display: none;
+    }
 }
 
 /*MAIN CONTENT*/
