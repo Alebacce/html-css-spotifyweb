@@ -183,24 +183,24 @@ poter fare il bordicino verde su home */
     color: white;
 }
 
-.highlight {
+.left-highlight {
     border-left: 3px solid #adff2f;
 }
 
 @media all and (max-width: 575px) {
-    .highlight {
+    .left-highlight {
         border-left: 0;
     }
 }
 
 /*con 14px anziché 20 si allinea perfettamente con le immagini sotto,
 in pratica è 20px - 3px di border-left della classe highlight*/
-.app-sections a.highlight {
+.app-sections a.left-highlight {
     padding-left: 17px;
 }
 
 @media all and (max-width: 575px) {
-    .app-sections a.highlight {
+    .app-sections a.left-highlight {
         padding-left: 10px;
     }
 }
@@ -343,6 +343,35 @@ in pratica è 20px - 3px di border-left della classe highlight*/
     }
 }
 
+.main-browser-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-browser-container a {
+    padding-left: 20px;
+    padding-bottom: 40px;
+    color: #8d8d8d;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-browser-container a:first-child {
+    padding-left: 0;
+}
+
+.bottom-highlight {
+    width: 30%;
+    padding: 1px;
+    background-color: #adff2f;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+}
+
 /*FOOTER*/
 footer {
     clear: both;
@@ -352,7 +381,6 @@ footer {
     overflow: hidden;
 
     background-color: #282828;
-    /*TEST*/
     color: white;
 }
 
