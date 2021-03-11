@@ -55,11 +55,10 @@ h6 {
 }
 
 .interactive-bar {
-    width: 50%;
     /* content: "";
     display: block;
     background-color: white; */
-    width: 50%;
+    width: 60%;
     padding: 2px;
     background-color: white;
     border-radius: 5px;
@@ -87,7 +86,7 @@ main {
     justify-content: space-between;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 575px) {
     .sidebar-container {
         width: unset;
         padding-top: 20px;
@@ -102,7 +101,7 @@ main {
     padding-left: 20px;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 575px) {
     .sidebar-padding {
         padding-left: 10px;
     }
@@ -126,7 +125,7 @@ main {
     display: none;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 575px) {
     .logo-big {
         display: none;
     }
@@ -146,13 +145,13 @@ poter fare il bordicino verde su home */
     display: block;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 575px) {
     .app-sections {
         flex-grow: 1;
     }
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 575px) {
     .app-sections a {
         padding-left: 10px;
     }
@@ -166,7 +165,7 @@ poter fare il bordicino verde su home */
     margin-left: 5px;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 575px) {
     .app-sections span {
         display: none;
     }
@@ -185,7 +184,7 @@ poter fare il bordicino verde su home */
     border-left: 3px solid #adff2f;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 575px) {
     .highlight {
         border-left: 0;
     }
@@ -197,7 +196,7 @@ in pratica è 20px - 3px di border-left della classe highlight*/
     padding-left: 17px;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 575px) {
     .app-sections a.highlight {
         padding-left: 10px;
     }
@@ -212,7 +211,7 @@ in pratica è 20px - 3px di border-left della classe highlight*/
     margin-top: 15px;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 575px) {
     .playlist-container {
         display: none;
     }
@@ -279,7 +278,7 @@ in pratica è 20px - 3px di border-left della classe highlight*/
     width: 15px;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 575px) {
     .download {
         padding-bottom: 7px;
         border-bottom: 0
@@ -317,7 +316,7 @@ in pratica è 20px - 3px di border-left della classe highlight*/
     font-size: 14px;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 575px) {
     .user span {
         display: none;
     }
@@ -335,7 +334,7 @@ in pratica è 20px - 3px di border-left della classe highlight*/
     color: white;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 575px) {
     .main-content {
         width: calc(100% - 43px);
     }
@@ -374,6 +373,7 @@ footer {
 
 .footer-album-container {
     width: 15%;
+    min-width: 30px;
 }
 
 .footer-album-info {
@@ -391,12 +391,13 @@ footer {
 
 /*footer-center*/
 .footer-section-center {
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 
 /*footer-right*/
 .footer-section-right {
     width: 20%;
+    min-width: 150px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -436,7 +437,7 @@ footer {
     font-size: 14px;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 575px) {
     #fixed-btn {
         width: calc(100% - 43px);
     }
