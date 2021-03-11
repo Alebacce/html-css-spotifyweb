@@ -39,9 +39,14 @@
                         </li>
 
                         <li>
+                            <!--inserire le immagini come SVG mi permette di cambiargli colore.
+                            Avevo trovato delle opzioni ma tutte richiedevano Javascript.
+                            Così sembra più realistico e carino l'hover-->
                             <a href="#">
                                 <div class="sidebar-image-box i-b va-m">
-                                        <img src="img/search.svg" alt="Cerca">
+                                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#a3a3a3" fill-rule="evenodd"/>
+                                        </svg>
                                 </div>
                                 <span class="i-b va-m">Cerca</span>
                             </a>
@@ -50,7 +55,10 @@
                         <li>
                             <a href="#">
                                 <div class="sidebar-image-box i-b va-m">
-                                        <img src="img/libreria.svg" alt=" La tua libreria">
+                                        <!-- <img src="img/libreria.svg" alt=" La tua libreria"> -->
+                                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#a3a3a3"/>
+                                        </svg>
                                 </div>
                                 <span class="i-b va-m">La tua libreria</span>
                             </a>
@@ -117,9 +125,11 @@
                     <div class="download sidebar-padding ">
                         <a href="#">
                             <div class="download-link-img-box i-b va-m">
-                                <img src="img/download.svg" alt="Download the app">
+                                <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Download icon</title><path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z" fill="#a3a3a3" fill-rule="evenodd"/>
+                                </svg>
                             </div>
-                            <span class="i-b mg-lf-7">Installa app</span>
+                            <a class="i-b mg-lf-7">Installa app</a>
                         </a>
                     </div>
                     
@@ -337,7 +347,11 @@
 
                     <div class="footer-album-info">
                         <div class="footer-album-info-title">Sinister</div>
-                        <div class="footer-album-info-artist">Brano nome</div>
+                        <div class="footer-album-info-artist">
+                            <a href="#">
+                                Brano nome
+                            </a>
+                        </div>
                     </div>
 
                     <div class="footer-icon-left">
@@ -348,15 +362,20 @@
 
                 <!--footer-center-->
                 <div class="footer-section-center">
-                    <i class="fas fa-random"></i>
-                    <i class="fas fa-step-backward"></i>
-                    <i id="play-btn" class="far fa-play-circle"></i>
-                    <i class="fas fa-step-forward"></i>
-                    <i class="fas fa-redo-alt"></i>
+                    <div class="reproduction-btn">
+                        <i class="fas fa-random"></i>
+                        <i class="fas fa-step-backward"></i>
+                        <i id="play-btn" class="far fa-play-circle"></i>
+                        <i class="fas fa-step-forward"></i>
+                        <i class="fas fa-redo-alt"></i>
+                    </div>
+
                     <div class="interactive-bar-container">
                         <span class="track-time">0:25</span>
                         <div class="interactive-bar">
-                            <div class="inrteractive-bar-progress"></div>
+                            <div class="inrteractive-bar-progress">
+                                <div class="progress-circle"></div>
+                            </div>
                         </div>
                         <span class="track-time">4:35</span>
                     </div>                
@@ -369,7 +388,7 @@
                     <i class="fas fa-volume-up"></i>
                     <div class="interactive-bar">
                         <div class="inrteractive-bar-progress">
-                            
+                                <div class="progress-circle"></div>
                         </div>
                     </div>
                 </div>

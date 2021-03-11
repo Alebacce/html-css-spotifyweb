@@ -57,7 +57,7 @@ h6 {
 .interactive-bar {
     background-color: #5a5a5a;
     border-radius: 5px;
-
+    cursor: pointer;
 }
 
 .inrteractive-bar-progress {
@@ -65,6 +65,28 @@ h6 {
     padding: 2px;
     background-color: #c1c1c1;
     border-radius: 5px;
+    display: block;
+    position: relative;
+}
+
+.inrteractive-bar-progress:hover {
+    background-color: #adff2f;
+}
+
+.progress-circle {
+    width: 15px;
+    height: 15px;
+    background-color: #c1c1c1;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -6px;
+    left: 90%;
+    visibility: hidden;
+}
+
+.inrteractive-bar-progress:hover .progress-circle {
+    visibility: visible;
 }
 
 /*MAIN*/
@@ -179,6 +201,10 @@ poter fare il bordicino verde su home */
     display: inline-block;
 }
 
+.app-sections a:hover svg path {
+    fill: white;
+}
+
 .selected {
     color: white;
 }
@@ -252,15 +278,15 @@ in pratica è 20px - 3px di border-left della classe highlight*/
     text-align: center;
 }
 
-#plus-btn:hover {
-    background-color: white;
-}
-
 #plus {
     font-size: 40px;
     font-weight: 500;
     color: black;
     line-height: 35px;
+}
+
+#create-playlist-container:hover #plus-btn {
+    background-color: white;
 }
 
 #create-playlist-text {
@@ -273,8 +299,12 @@ in pratica è 20px - 3px di border-left della classe highlight*/
     border-bottom: 1px solid #a3a3a3;
 }
 
-.download a {
-    display: block;
+.download:hover svg path {
+    fill: white;
+}
+
+.download:hover a {
+    color: white;
 }
 
 .download-link-img-box {
@@ -287,7 +317,7 @@ in pratica è 20px - 3px di border-left della classe highlight*/
         border-bottom: 0
     }
 
-    .download span {
+    .download a {
         display: none;
     }
 }
@@ -362,6 +392,10 @@ in pratica è 20px - 3px di border-left della classe highlight*/
 
 .main-browser-container a:first-child {
     padding-left: 0;
+}
+
+.main-browser-container a:hover {
+    color: white;
 }
 
 .bottom-highlight {
@@ -447,6 +481,7 @@ footer {
     width: 100%;
     padding: 0 10px;
     overflow: hidden;
+    overflow-x: auto;
 
     background-color: #282828;
     color: white;
@@ -483,9 +518,14 @@ footer {
     margin-right: 30px;
 }
 
-.footer-album-info-artist {
+.footer-album-info-artist a {
     font-size: 10px;
     color: #8d8d8d;
+    text-decoration: none;
+}
+
+.footer-album-info-artist a:hover {
+    text-decoration: underline;
 }
 
 .footer-icon-left>i {
@@ -493,6 +533,11 @@ footer {
     font-size: 16px;
     font-weight: 500;
     padding-right: 10px;
+    cursor: pointer;
+}
+
+.footer-icon-left>i:hover {
+    color: white;
 }
 
 /*footer-center*/
@@ -506,25 +551,32 @@ footer {
     flex-shrink: 0;
 }
 
-.footer-section-center i {
-    font-size: 18px;
-    padding-left: 15px;
-    padding-bottom: 15px;
+.reproduction-btn {
+    width: 35%;
+    min-width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
 
-.footer-section-center i:first-child {
-    padding-left: 0;
+.footer-section-center i {
+    font-size: 16px;
 }
 
 #play-btn {
     font-size: 30px;
-    padding-left: 30px;
-    padding-right: 15px;
+    padding: 0 10px;
+}
+
+#play-btn:hover {
+    transform: scale(1.3);
 }
 
 .footer-section-center .interactive-bar-container {
     width: 100%;
     min-width: 200px;
+    padding-top: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -545,6 +597,10 @@ footer {
     align-items: center;
 }
 
+.footer-section-right>i {
+    cursor: pointer;
+}
+
 .footer-section-right .interactive-bar {
     width: 60%;
 }
@@ -563,7 +619,7 @@ footer {
     align-items: center;
 
     height: 87.17px;
-    padding-right: 25px;
+    padding-right: 30px;
     background-color: rgba(0, 0, 0, 0.4)
 }
 
@@ -579,7 +635,7 @@ footer {
 }
 
 #fixed-btn a:hover {
-    font-size: 14px;
+    transform: scale(1.1);
 }
 
 @media all and (max-width: 575px) {
