@@ -411,6 +411,7 @@ in pratica è 20px - 3px di border-left della classe highlight*/
 
 .main-section h2 {
     font-size: 22px;
+    font-weight: 800;
 }
 
 .title {
@@ -496,6 +497,13 @@ in pratica è 20px - 3px di border-left della classe highlight*/
 .main-album-info {
     text-align: center;
     cursor: pointer;
+}
+
+.main-album-info h3 {
+    font-size: 17px;
+    font-weight: 800;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 .main-album-info span {
