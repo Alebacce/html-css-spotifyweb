@@ -367,25 +367,29 @@ footer {
 
 /*footer-left*/
 .footer-section-left {
-    width: 20%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
 
-.footer-album-container {
-    width: 15%;
-    min-width: 30px;
+.footer-album-cover {
+    width: 50px;
+    min-width: 40px;
+}
+
+.footer-album-cover img {
+    width: 100%;
 }
 
 .footer-album-info {
-    padding-left: 10px;
-    padding-right: 30px;
+    margin-left: 10px;
+    margin-right: 30px;
 }
 
-.footer-album-container img {
-    width: 100%;
+.footer-album-info-artist {
+    font-size: 10px;
+    color: #8d8d8d;
 }
 
 .footer-icon-left>i {
@@ -398,10 +402,12 @@ footer {
 /*footer-center*/
 .footer-section-center {
     width: 40%;
+    min-width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-shrink: 0;
 }
 
 .footer-section-center i {
@@ -422,6 +428,7 @@ footer {
 
 .footer-section-center .interactive-bar-container {
     width: 100%;
+    min-width: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -429,6 +436,7 @@ footer {
 
 .footer-section-center .interactive-bar {
     width: 80%;
+    margin: 0 10px;
 }
 
 /*footer-right*/
