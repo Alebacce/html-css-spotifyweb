@@ -9,6 +9,8 @@ body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 700;
+
+    min-width: 320px;
 }
 
 .clearfix::after {
@@ -76,9 +78,11 @@ main {
 
 @media all and (max-width: 767px) {
     .sidebar-container {
-        width: fit-content;
+        width: unset;
         padding-top: 20px;
         padding-right: 10px;
+
+        align-items: center;
     }
 }
 
@@ -320,6 +324,12 @@ in pratica è 20px - 3px di border-left della classe highlight*/
     color: white;
 }
 
+@media all and (max-width: 767px) {
+    .main-content {
+        width: calc(100% - 43px);
+    }
+}
+
 /*FOOTER*/
 footer {
     clear: both;
@@ -363,4 +373,10 @@ footer {
 
 #fixed-btn a:hover {
     font-size: 14px;
+}
+
+@media all and (max-width: 767px) {
+    #fixed-btn {
+        width: calc(100% - 43px);
+    }
 }
