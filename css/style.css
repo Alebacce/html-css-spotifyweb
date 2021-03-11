@@ -55,12 +55,15 @@ h6 {
 }
 
 .interactive-bar {
-    /* content: "";
-    display: block;
-    background-color: white; */
-    width: 60%;
+    background-color: #5a5a5a;
+    border-radius: 5px;
+
+}
+
+.inrteractive-bar-progress {
+    width: 25%;
     padding: 2px;
-    background-color: white;
+    background-color: #c1c1c1;
     border-radius: 5px;
 }
 
@@ -386,12 +389,46 @@ footer {
 }
 
 .footer-icon-left>i {
+    color: #797979;
+    font-size: 16px;
+    font-weight: 500;
     padding-right: 10px;
 }
 
 /*footer-center*/
 .footer-section-center {
-    /* flex-grow: 1; */
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-section-center i {
+    font-size: 18px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.footer-section-center i:first-child {
+    padding-left: 0;
+}
+
+#play-btn {
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+.footer-section-center .interactive-bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section-center .interactive-bar {
+    width: 80%;
 }
 
 /*footer-right*/
@@ -402,6 +439,10 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer-section-right .interactive-bar {
+    width: 60%;
 }
 
 /*FIXED TOP BUTTON*/
