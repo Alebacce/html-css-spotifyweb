@@ -252,9 +252,14 @@ in pratica è 20px - 3px di border-left della classe highlight*/
     font-size: 13px;
 }
 
+/*63.2px è l'altezza complessiva della sezione sottostante che le playlist
+che comprende il download del'app e il profilo dell'user.
+In questo modo le playlist scorrono fino all'ultim, altrimenti si fermerebbero
+"sotto" la sezione precedente*/
 .playlist-container ul {
-    height: 100%;
+    height: calc(100% - 63.2px);
     overflow: auto;
+    padding-bottom: 5px;
 }
 
 .playlist-container li {
