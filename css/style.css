@@ -91,6 +91,7 @@ h6 {
 /*MAIN*/
 main {
     height: calc(100% - 100px);
+    overflow: hidden;
 }
 
 
@@ -526,12 +527,13 @@ In questo modo le playlist scorrono fino all'ultim, altrimenti si fermerebbero
 
 /*FOOTER*/
 footer {
-    clear: both;
     height: 100px;
     min-height: 100px;
     width: 100%;
     padding: 0 10px;
     overflow: hidden;
+    z-index: 1;
+    position: relative;
 
     background-color: #282828;
     color: white;
@@ -739,6 +741,7 @@ negli schermi più piccoli*/
     right: 0;
     width: calc(100% - 220px);
     text-align: right;
+    z-index: 0;
 
     display: flex;
     flex-direction: row;
